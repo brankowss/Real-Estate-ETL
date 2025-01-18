@@ -51,12 +51,13 @@ Go to Account Settings and select Create New API Token to download kaggle.json.
 Move the kaggle.json file to the correct location:
 
 ```bash
-mkdir -p ~/.kaggle # On Linux/Mac
+# On Linux/Mac
+mkdir -p ~/.kaggle 
 mv /path/to/kaggle.json ~/.kaggle/
 chmod 600 ~/.kaggle/kaggle.json
 ``` 
 ```bash
-Windows (PowerShell):  # On Windows
+# On Windows
 mkdir $HOME\.kaggle
 Move-Item -Path .\Downloads\kaggle.json -Destination $HOME\.kaggle\
 ``` 
