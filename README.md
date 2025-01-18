@@ -22,7 +22,7 @@ This project demonstrates an ETL pipeline for analyzing Serbian real estate data
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/brankowss/Real-Estate-ETL
-   cd Serbian-Real-Estate-ETL
+   cd Real-Estate-ETL
    ```
 2. **Create a virtual environment**:
     ```bash
