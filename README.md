@@ -70,7 +70,7 @@ psql -U your_postgres_username
 ``` 
 Create the database:
 ```bash
-CREATE DATABASE real_estate_db;
+CREATE DATABASEyour_postgres_database_name;
 ```
 
 ### 3. Creating the `.env` File
