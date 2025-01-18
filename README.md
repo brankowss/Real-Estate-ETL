@@ -1,13 +1,13 @@
 # Serbian Real Estate ETL Project
 
-This project demonstrates an ETL pipeline for analyzing Serbian real estate data. It fetches data from **Kaggle**, processes it using Python and SQL, and stores it in a **PostgreSQL** database. Analytical **SQL views** are created to extract insights such as  10 cheapest 4 bedroom properties for my 2 favorite cities, 10 most expensive properties, 10 most cheapest properties and more.
+This project demonstrates an ETL pipeline for analyzing Serbian real estate data. It fetches data from **Kaggle**, processes it using Python and SQL, and stores it in a **PostgreSQL** database. Analytical **SQL views** are created to extract insights such as 10 cheapest 4-bedroom properties for my two favorite cities, 10 most expensive properties, 10 most cheapest properties and more.
 
 ## **Project Structure**
 
 - **`data/`**: Contains raw (`raw/`) and processed (`processed/`) data.
 - **`scripts/`**:
   - `extract.py`: Fetches the dataset from Kaggle using the Kaggle API.
-  - `transform.py`: Cleans data who have empty value.
+  - `transform.py`: Cleans data who have empty values.
   - `load.py`: Loads the processed data into the PostgreSQL database.
 - **`sql/`**:
   - `create_table.sql`: Defines the database schema for the `real_estate` table.
@@ -55,8 +55,7 @@ Move the kaggle.json file to the correct location:
 mkdir -p ~/.kaggle 
 mv /path/to/kaggle.json ~/.kaggle/
 chmod 600 ~/.kaggle/kaggle.json
-``` 
-```bash
+
 # On Windows
 mkdir $HOME\.kaggle
 Move-Item -Path .\Downloads\kaggle.json -Destination $HOME\.kaggle\
@@ -83,8 +82,8 @@ In the root of the project, create a file named `.env` and add the following env
 POSTGRES_DB=your_postgres_database_name
 POSTGRES_USER=your_postgres_username
 POSTGRES_PASSWORD=your_postgres_password
-POSTGRES_HOST=your_host
-POSTGRES_PORT=your_port
+POSTGRES_HOST=localhost  # or your host
+POSTGRES_PORT=5432       # or your custom port
 ```  
 
 
