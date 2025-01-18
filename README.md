@@ -49,14 +49,14 @@ Before running the project, you need to sign up and configure your KaggleAPI tok
 Sign up for a free Kaggle account: Kaggle(https://www.kaggle.com/).
 Go to Account Settings and select Create New API Token to download kaggle.json.
 Move the kaggle.json file to the correct location:
-Linux/Mac:
+
 ```bash
-mkdir -p ~/.kaggle
+mkdir -p ~/.kaggle # On Linux/Mac
 mv /path/to/kaggle.json ~/.kaggle/
 chmod 600 ~/.kaggle/kaggle.json
 ``` 
 ```bash
-Windows (PowerShell):
+Windows (PowerShell):  # On Windows
 mkdir $HOME\.kaggle
 Move-Item -Path .\Downloads\kaggle.json -Destination $HOME\.kaggle\
 ``` 
